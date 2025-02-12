@@ -1,0 +1,24 @@
+{
+  "name": "collab-engine",
+  "version": "1.0.0",
+  "description": "Real-time collaboration engine with CRDT and Operational Transformation",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "lint": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "keywords": ["crdt", "collaboration", "real-time", "operational-transformation", "typescript"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "@types/node": "^22.5.0",
+    "@types/uuid": "^10.0.0"
+  }
+}
