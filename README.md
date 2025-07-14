@@ -158,3 +158,7 @@ This library supports **both approaches**. Use CRDTs for data structures that ne
 ## License
 
 MIT
+
+## Protocol
+
+Uses a custom binary sync protocol over WebSocket for minimal overhead.
