@@ -20,3 +20,6 @@ export { OTEngine } from './OT.js';
 export { PresenceTracker } from './Presence.js';
 export { SyncProtocol } from './Sync.js';
 export { CollabServer } from './Server.js';
+export { EditHistory } from './History.js';
+export { Awareness } from './Awareness.js';
+export { LamportClock, VectorClock } from './utils/clock.js';

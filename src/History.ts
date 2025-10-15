@@ -104,10 +104,16 @@ export class EditHistory {
           });
           break;
         case 'delete':
-          // we don't have the deleted text, push a placeholder
+          // The inverse of a delete is an insert restoring the deleted text.
+          // Since DeleteOp doesn't carry the deleted content, we store a
+          // placeholder string that the caller should replace with the real
+          // content when the document state is available.
           inverse.push({
-            type: 'retain',
-            count: op.length,
+            type: 'insert',
+            position: op.position,
+            content: '', // deleted content unavailable at this layer
+            clientId: op.clientId,
+            timestamp: Date.now(),
           });
           break;
         case 'retain':
