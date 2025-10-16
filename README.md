@@ -162,3 +162,23 @@ MIT
 ## Protocol
 
 Uses a custom binary sync protocol over WebSocket for minimal overhead.
+
+---
+
+## 🇫🇷 Documentation en français
+
+### Description
+collab-engine est un moteur de collaboration en temps réel avec support des CRDT et de la Transformation Opérationnelle. Il permet de construire des fonctionnalités d'édition collaborative similaires à Google Docs, Figma ou Notion. La bibliothèque inclut des structures de données CRDT (LWW-Register, G-Counter, OR-Set, RGA) pour garantir la cohérence sans serveur centralisé.
+
+### Installation
+```bash
+npm install collab-engine
+```
+
+### Utilisation
+```typescript
+import { CollabServer } from 'collab-engine';
+const server = new CollabServer({ port: 3001 });
+server.start();
+```
+Consultez la documentation en anglais ci-dessus pour la configuration serveur, client et les exemples d'intégration CRDT.
